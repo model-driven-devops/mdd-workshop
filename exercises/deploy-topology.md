@@ -32,9 +32,12 @@ Install the OpenConfig service on NSO.
 ansible-playbook ciscops.mdd.nso_update_packages -e sudo_required=no -e remote_src=no
 ```
 
-Update NSO with the devices in the MDD reference topology.  Note, if this command fails, you may need to re-run it.  This is an artifact of ARP cache issues in the sandbox and devices may not respond right away.
+Update NSO with the devices in the MDD reference topology.
+
 ```
 ansible-playbook ciscops.mdd.nso_update_devices
 ```
+
+> Note, if this command fails, you may need to re-run it.  This is an artifact of ARP cache issues in the sandbox and devices may not respond right away.
 
 [Home](../README.md#workshop-exercises) | [Previous](initial-setup.md#initial-setup) | [Next](explore-inventory.md#exploring-the-inventory)
