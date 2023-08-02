@@ -1,4 +1,4 @@
-# DEVWKS-2870 Hands On With Model-Driven DevOps
+# Hands On With Model-Driven DevOps
 
 In this workshop you will get hands on experience with the Model-Driven DevOps framework. You will explore data models, programmable infrastructure, controller platforms, version control, sources-of-truth and workflow engines. The goal is to illustrate the business outcomes that can be achieved with DevOps when applied to network infrastructure. Many people talk about the benefits of DevOps, but there are few places to see it applied to network infrastructure. Today is your lucky day!
 
