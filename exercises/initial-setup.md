@@ -21,7 +21,7 @@ This workshop is designed to work with Visual Studio Code and the Cisco NSO DevN
 
 1. Click the "Clone Git Repository..." and clone the MDD repo URL.  When prompted, accept the default directory to clone the repo into (`/home/developer`)
     ```
-    https://github.com/model-driven-devops/mdd.git
+    https://github.com/model-driven-devops/mdd-workshop.git
     ```
 
 1. When prompted, click "Open" to open the MDD repo and enter the DevBox password.
