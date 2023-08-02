@@ -1,0 +1,116 @@
+all:
+  vars:
+    ansible_user: "{{ lookup('env', 'NSO_DEVICES_USERNAME') | default('admin', true) }}"
+    ansible_password: "{{ lookup('env', 'NSO_DEVICES_PASSWORD') | default('admin', true) }}"
+    ansible_network_os: ios
+    netconf_template_os: ios
+    sites:
+      - hq
+      - site1
+      - site2
+    regions:
+      - org
+      - region1
+      - region2
+  hosts:
+    hq-sw1:
+      ansible_host: 10.10.20.132
+    hq-sw2:
+      ansible_host: 10.10.20.133
+    site1-sw1:
+      ansible_host: 10.10.20.134
+    site2-sw1:
+      ansible_host: 10.10.20.139
+    hq-rtr1:
+      ansible_host: 10.10.20.135
+    hq-rtr2:
+      ansible_host: 10.10.20.136
+    hq-pop:
+      ansible_host: 10.10.20.140
+    site1-rtr1:
+      ansible_host: 10.10.20.137
+    site2-rtr1:
+      ansible_host: 10.10.20.138
+    WAN-rtr1:
+      ansible_host: 10.10.20.131
+  #
+  # Oranized by device type
+  #
+  children:
+    network:
+      children:
+        switches:
+          vars:
+            mgmt_interface: GigabitEthernet0/0
+          hosts:
+            hq-sw1:
+            hq-sw2:
+            site1-sw1:
+            site2-sw1:
+        routers:
+          vars:
+            mgmt_interface: GigabitEthernet1
+          children:
+            hq_routers:
+              hosts:
+                hq-rtr1:
+                hq-rtr2:
+                hq-pop:
+            site_routers:
+              hosts:
+                site1-rtr1:
+                site2-rtr1:
+        WAN_routers:
+          vars:
+            mgmt_interface: GigabitEthernet1
+          hosts:
+            WAN-rtr1:
+    #
+    # Organized by organization structure
+    #
+    org:
+      children:
+        region1:
+          children:
+            hq:
+              hosts:
+                hq-rtr1:
+                  tags:
+                    - hq_router
+                    - bgp
+                    - ospf
+                hq-rtr2:
+                  tags:
+                    - hq_router
+                    - bgp
+                    - ospf
+                hq-sw1:
+                  tags:
+                    - switch
+                hq-sw2:
+                  tags:
+                    - switch
+                hq-pop:
+                  tags:
+                    - hq_pop
+                WAN-rtr1:
+                  tags:
+                    - WAN_router
+            site1:
+              hosts:
+                site1-rtr1:
+                  tags:
+                    - site_router
+                site1-sw1:
+                  tags:
+                    - switch
+        region2:
+          children:
+            site2:
+              hosts:
+                site2-rtr1:
+                  tags:
+                    - site_router
+                site2-sw1:
+                  tags:
+                    - switch
