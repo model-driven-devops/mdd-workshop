@@ -28,8 +28,6 @@ Shown below is the topology you will be working with during the workshop.  It is
 
 ![MDD Reference Topology](exercises/mdd_topo.png?raw=true "MDD Reference Topology")
 
-Each pod has its own topology running in a Cisco Modeling Labs instance in AWS.
-
 ## Workshop Exercises
 
 These exercises will help you get hands-on experience with different aspects of the reference implementation. You will begin by getting familiar with the data and Ansible playbooks in Visual Studio Code and finish with the fully implemented pipeline in GitLab.
