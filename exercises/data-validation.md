@@ -17,7 +17,7 @@ yamllint mdd-data
 
 This can be done manually or as part of the CI portion of the pipeline in the Github action. When there are no issues, `yamllint` will return silently with no error value. When it does find an issue, it will print out the finding with a non-zero return value. When the runner sees this non-zero return value indicating an error, the pipeline will fail and the findings presented in the test output. For example, let's break the formatting of the `mdd-data/org/oc-ntp.yml` file and see if the linter catches it.
 
-Open the `mdd-data/org/oc-ntp.yml` file in the Visual Studio Code editor and indent line 14 two spaces to the right. The configuration for server 216.239.35.0 should look like:
+Open the `mdd-data/org/oc-ntp.yml` file in the Visual Studio Code editor and indent line 15 two spaces to the right. The configuration for server 216.239.35.0 should look like:
 
 ```yaml
           - openconfig-system:address: '216.239.35.0'
