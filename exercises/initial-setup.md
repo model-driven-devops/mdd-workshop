@@ -10,7 +10,7 @@ This workshop is designed to work with Visual Studio Code and the Cisco NSO DevN
 ## Steps
 1. Following the instructions in your NSO sandbox, connect to the sandbox via VPN.
 
-1. If you don't already have it installed, install Visual Studio Code and the Remote - SSH plugin. Note: you can use any IDE you prefer, if you do not prefer to use Visual Studio Code. However, the instructions specified in this workshop will need to be modified for you environment.
+1. If you don't already have it installed, install Visual Studio Code and the Remote - SSH plugin. Note: you can use any IDE you prefer, if you do not prefer to use Visual Studio Code. However, the instructions specified in this workshop will need to be modified for your environment.
 
 1. Open Visual Studio Code and click the green "Open a Remote Window" button in the bottom left corner then choose "Connect to Host...".  Select "+ Add New SSH Host..." from the list and enter the command to access the DevBox and then press return.
     ```
