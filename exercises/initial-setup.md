@@ -41,6 +41,7 @@ This workshop is designed to work with Visual Studio Code and the Cisco NSO DevN
 
 1. Install the required Python packages.
     ```
+    pip install wheel
     pip install -r requirements.txt
     ```
 
