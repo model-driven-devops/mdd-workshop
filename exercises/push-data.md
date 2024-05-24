@@ -297,10 +297,13 @@ Copy the updated vlan configuration into the file `mdd-data/org/oc-vlan.yml`:
 cp files/oc-vlan-new.yml mdd-data/org/oc-vlan.yml
 ```
 
-This file contains the following additional data. View the file in the editor to verify.
+This file contains the following additional data. View the file in the editor to verify. You can also run this diff command:
 
 ```
-$ diff files/oc-vlan.yml files/oc-vlan-new.yml 
+diff files/oc-vlan.yml files/oc-vlan-new.yml
+
+```
+```
 19a20,24
 >               - openconfig-network-instance:vlan-id: 20
 >                 openconfig-network-instance:config:
