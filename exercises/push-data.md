@@ -135,7 +135,10 @@ cp files/oc-interfaces-new.yml mdd-data/org/region2/site2/site2-sw1/oc-interface
 This file contains the following changed data.  View the file in the editor to verify.
 
 ```
-$ diff files/oc-interfaces.yml files/oc-interfaces-new.yml 
+$ diff files/oc-interfaces.yml files/oc-interfaces-new.yml
+
+```
+```
 59c59,64
 <             openconfig-interfaces:type: ethernetCsmacd
 ---
