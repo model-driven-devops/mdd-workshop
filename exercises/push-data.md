@@ -132,10 +132,10 @@ Let's look at making a change that affects a single device. A common change of t
 cp files/oc-interfaces-new.yml mdd-data/org/region2/site2/site2-sw1/oc-interfaces.yml
 ```
 
-This file contains the following changed data.  View the file in the editor to verify.
+This file contains the following changed data.  View the file in the editor to verify. You can also run this diff command:
 
 ```
-$ diff files/oc-interfaces.yml files/oc-interfaces-new.yml
+diff files/oc-interfaces.yml files/oc-interfaces-new.yml
 
 ```
 ```
