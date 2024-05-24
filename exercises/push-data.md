@@ -272,6 +272,11 @@ mdd_data:
                 vlan-id: 10
                 name: 'Internal-1'
                 status: 'ACTIVE'
+            - vlan-id: 99
+              config:
+                vlan-id: 99
+                name: 'Native'
+                status: 'ACTIVE'
             - vlan-id: 100
               config:
                 vlan-id: 100
