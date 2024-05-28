@@ -221,7 +221,7 @@ ansible-playbook cisco.cml.inventory --limit site2-sw1
 Then login to the device using SSH with username admin and password admin (substitute your `site2-sw1` IP address here):
 
 ```
-$ ssh admin@10.10.20.139
+ssh admin@10.10.20.139
 ```
 ```
 Password:
