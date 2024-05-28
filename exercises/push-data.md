@@ -222,6 +222,8 @@ Then login to the device using SSH with username admin and password admin (subst
 
 ```
 $ ssh admin@10.10.20.139
+```
+```
 Password:
 Welcome to site2-sw1
 
