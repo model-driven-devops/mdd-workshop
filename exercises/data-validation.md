@@ -298,7 +298,7 @@ Since we put `oc-dns.yml` at the region1 level, it applied to all of the devices
 ```
 
 We could potentially address this is in a couple of different ways:
-1. If we wanted to allow `8.8.8.8` to be used accross the organization, we could add it to the enumeration in `schemas/local/dns.schema.yml`.
+1. If we wanted to allow `8.8.8.8` to be used accross the organization, we could add it to the enumeration in `mdd-data/org/validate-local.yml`.
 2. We could define different schemas for different regions (e.g. `mdd-data/org/region1/validate-dns.yml` and `mdd-data/org/region2/validate-dns.yml`) that specify different schemas to use to validate data for the devices in each of those regions.
 
 For now, just remove the the `mdd-data/org/region1/oc-dns.yml` file:
