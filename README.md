@@ -33,7 +33,7 @@ Shown below is the topology you will be working with during the workshop.  It is
 These exercises will help you get hands-on experience with different aspects of the reference implementation. You will begin by getting familiar with the data and Ansible playbooks in Visual Studio Code and finish with the fully implemented pipeline in GitLab.
 
 * [Initial Setup](exercises/initial-setup.md#initial-setup)
-* [Deploy the Topology](exercises/deploy-topology.md#deploy-the-topology)
+* [Exploring the Topology](exercises/exploring-topology.md#exploring-the-topology)
 * [Exploring the Inventory](exercises/explore-inventory.md#exploring-the-inventory)
 * [Exploring the Data](exercises/explore-data.md#exploring-the-data)
 * [Data Validation](exercises/data-validation.md#data-validation)
