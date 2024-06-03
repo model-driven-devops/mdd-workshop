@@ -309,4 +309,4 @@ Finally, there are a few key takeaways from this lab:
 - Models are the key to all of this. Without a well-defined model, the validation and state checking required will not be possible.
 - Operators and engineers working in this model do not need to be progammers. The skill set require of people to effectively operate in this model are understanding data formats (i.e. YAML/JSON) and being able to create/modify schema against that validate the data (i.e. JSON Schema).
 
-[Home](../README.md#workshop-exercises) | [Previous](check-state.md#state-checking) | [Next](populate-netbox.md#populating-netbox)
+[Home](../README.md#workshop-exercises) | [Previous](check-state.md#state-checking) | [Next](exploring-netbox.md#exploring-netbox)
