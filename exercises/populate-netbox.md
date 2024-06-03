@@ -1,6 +1,6 @@
 # Populating NetBox
 
-In this exercise you will populate the NetBox database from the NSO CDB.  Sometimes it is preferrable to have certain data stored in a database oriented tool such as NetBox rather than YAML stored in git.  Typical source of truth items that we might store in NetBox are device, interface and IP information.  Let's get started!
+In this exercise you will use NetBox as a Source of Truth.  Sometimes it is preferrable to have certain data stored in a database oriented tool such as NetBox rather than YAML stored in git.  Typical source of truth items that we might store in NetBox are device, interface and IP information.  Let's get started!
 
 In Visual Studio Code, set the required environment variables to tell the playbooks about NetBox.
 
@@ -9,35 +9,18 @@ export NETBOX_API=http://devtools-netbox.lab.devnetsandbox.local/
 export NETBOX_TOKEN=0123456789abcdef0123456789abcdef01234567
 ```
 
-Populate the basic information NetBox will need to create devices (device types, etc.)
-
-```
-ansible-playbook ciscops.mdd.netbox_init
-```
-
-Update the devices in NetBox based on the Ansible inventory.
-
-```
-ansible-playbook ciscops.mdd.inventory_update_netbox
-```
 
 Now browse to the NetBox UI at http://devtools-netbox.lab.devnetsandbox.local and login with the "developer" credentials.  Verify that we have the reference architecture devices populated.
 
 ![Devices Populated](netbox-devices-populated.png)
 
-And finally, populate all of the interface, IP address and VLAN information from the NSO CDB.
-
-```
-ansible-playbook ciscops.mdd.nso_update_netbox
-```
 
 In the NetBox UI, verify that we have interface and IP information populated.
 
 ![Interfaces Populated](netbox-interfaces-populated.png)
 
-> Note: this proecess will take several minutes
 
-Remove all interface data from the mdd-data directory.  We are going to collect this information from NetBox now.
+Remove all interface data from the mdd-data directory.  We are going to collect this information from NetBox now as a Source of Truth.
 
 ```
 find mdd-data -name "oc-interfaces.yml" -type f -delete
