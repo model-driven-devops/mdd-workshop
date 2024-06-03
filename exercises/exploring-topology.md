@@ -8,4 +8,4 @@ Let's browse to CML in a new tab at https://10.10.20.161 and login with your dev
 
 Please keep this tab open-- we'll come back to it in later exercises to see how MDD interacts with the test network in real time. 
 
-[Home](../README.md#workshop-exercises) | [Previous](initial-setup.md#initial-setup) | [Next](explore-inventory.md#exploring-the-inventory)
+[Home](../README.md#workshop-exercises) | [Previous](initial-setup.md#initial-setup) | [Next](exploring-inventory.md#exploring-the-inventory)
