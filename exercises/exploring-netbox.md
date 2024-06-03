@@ -1,4 +1,4 @@
-# Populating NetBox
+# Exploring NetBox
 
 In this exercise you will use NetBox as a Source of Truth.  Sometimes it is preferrable to have certain data stored in a database oriented tool such as NetBox rather than YAML stored in git.  Typical source of truth items that we might store in NetBox are device, interface and IP information.  Let's get started!
 
