@@ -29,4 +29,4 @@ This workshop is designed to work with Visual Studio Code and the Cisco NSO DevN
 
 That's it! Your environment should be properly setup and you are ready to start your journey with Model-Driven DevOps.
 
-[Home](../README.md#workshop-exercises) | [Previous](../README.md#workshop-exercises) | [Next](deploy-topology.md#deploying-the-topology)
+[Home](../README.md#workshop-exercises) | [Previous](../README.md#workshop-exercises) | [Next](exploring-topology.md#exploring-the-topology)
