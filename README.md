@@ -40,4 +40,4 @@ These exercises will help you get hands-on experience with different aspects of 
 * [Pushing the Data](exercises/push-data.md#pushing-data)
 * [State Checking](exercises/check-state.md#state-checking)
 * [CI/CD](exercises/cicd.md#cicd)
-* [Populating NetBox](exercises/populate-netbox.md#populating-netbox)
+* [Populating NetBox](exercises/exploring-netbox.md#exploring-netbox)
