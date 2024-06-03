@@ -161,4 +161,4 @@ This invocation of the `ciscops.mdd.mdd_combine` filter takes the default data a
 
 Now that you have seen how the data is constructed, in the next exercise you will expore how the data can be validated.
 
-[Home](../README.md#workshop-exercises) | [Previous](explore-inventory.md#exploring-the-inventory) | [Next](data-validation.md#data-validation)
+[Home](../README.md#workshop-exercises) | [Previous](exploring-inventory.md#exploring-the-inventory) | [Next](data-validation.md#data-validation)
