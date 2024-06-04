@@ -239,7 +239,7 @@ show run int gig1/1
 Now, ``` exit ``` out of the SSH session  to `site2-sw1` and rollback the configuration with the ```ciscops.mdd.nso_rollback``` playbook (use your rollback ID, NOT the one shown below):
 
 ```
-ansible-playbook ciscops.mdd.nso_rollback -e rollback_id=10036
+ansible-playbook ciscops.mdd.nso_rollback -e rollback_id=ROLLBACK_ID_FROM_OUTPUT_ABOVE
 ```
 > Note: update the rollback ID to match the one shown in your terminal output for the previous step.
 
